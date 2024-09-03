@@ -1,0 +1,89 @@
+O projeto consiste na criação de um sistema de gerenciamento de eventos utilizando comandos SQL. Este sistema permitirá armazenar informações sobre eventos, participantes e suas respectivas inscrições. O objetivo é desenvolver um conjunto de scripts SQL que crie e gerencie o banco de dados, possibilitando a inserção, consulta, atualização e exclusão de dados.
+# Sistema de Gerenciamento de Eventos
+
+## Descrição
+
+Este projeto é um sistema de gerenciamento de eventos desenvolvido em SQL. O sistema permite a criação de um banco de dados para armazenar informações de eventos, participantes e inscrições. Ele também permite a manipulação desses dados através de operações de inserção, consulta, atualização e exclusão.
+
+## Estrutura do Banco de Dados
+
+- **Eventos**: Tabela para armazenar informações sobre eventos (ID, nome, data, local e descrição).
+- **Participantes**: Tabela para armazenar informações sobre participantes (ID, nome, e-mail e telefone).
+- **Inscricoes**: Tabela para armazenar informações sobre inscrições (ID, evento, participante e data da inscrição).
+
+## Funcionalidades
+
+1. **Criação do Banco de Dados e Tabelas:**
+   - Criação de tabelas para eventos, participantes e inscrições.
+
+2. **Inserção de Dados:**
+   - Adicionar eventos, participantes e inscrições no banco de dados.
+
+3. **Consultas:**
+   - Consultar eventos disponíveis.
+   - Listar participantes inscritos em um evento.
+   - Verificar eventos em que um participante está inscrito.
+   - Listar participantes com mais de uma inscrição.
+
+4. **Atualização de Dados:**
+   - Modificar informações de eventos e participantes.
+
+5. **Deleção de Dados:**
+   - Remover eventos passados e cancelar inscrições.
+
+## Requisitos
+
+- Servidor de banco de dados SQL compatível (MySQL, MariaDB, etc.)
+
+## Executando o Projeto
+
+1. **Criação do Banco de Dados:**
+
+   ```sql
+   CREATE DATABASE GerenciamentoEventos;
+   USE GerenciamentoEventos;
+Criação das Tabelas:
+
+Executar os comandos de criação de tabelas no banco de dados para estruturar as informações.
+
+Inserção de Dados:
+
+Executar os comandos de inserção de dados para adicionar eventos, participantes e inscrições.
+
+Consultas e Relatórios:
+
+Usar os comandos SELECT para realizar consultas específicas conforme necessário.
+
+Atualização e Deleção:
+
+Utilizar os comandos UPDATE e DELETE para atualizar ou remover informações conforme necessário.
+
+Comandos Importantes
+Criação do Banco de Dados e Tabelas:
+
+CREATE DATABASE GerenciamentoEventos;
+CREATE TABLE Eventos (...)
+CREATE TABLE Participantes (...)
+CREATE TABLE Inscricoes (...)
+Inserção de Dados:
+
+INSERT INTO Eventos (...) VALUES (...)
+INSERT INTO Participantes (...) VALUES (...)
+INSERT INTO Inscricoes (...) VALUES (...)
+Consultas:
+
+SELECT * FROM Eventos;
+SELECT ... FROM Inscricoes JOIN Participantes ...
+Atualização de Dados:
+
+UPDATE Eventos SET ...
+UPDATE Participantes SET ...
+Deleção de Dados:
+
+DELETE FROM Eventos WHERE ...
+DELETE FROM Inscricoes WHERE ...
+Observações
+O banco de dados deve ser criado e manipulado em um ambiente SQL compatível.
+Certifique-se de executar cada comando na ordem correta para evitar erros de integridade referencial.
+Licença
+Este projeto é de código aberto e pode ser modificado e distribuído livremente.
